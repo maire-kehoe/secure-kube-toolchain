@@ -60,8 +60,8 @@ services:
           PROD_CLUSTER_NAME: '{{form.pipeline.parameters.prod-cluster-name}}'
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
         execute: true
-  webide:
-    service_id: orion
+  artifacts:
+    service_id: artifactory
 form:
   pipeline:
     parameters:
